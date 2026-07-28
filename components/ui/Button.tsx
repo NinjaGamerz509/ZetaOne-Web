@@ -11,7 +11,7 @@ interface BaseProps {
   icon?: string;
   iconPosition?: "left" | "right";
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 interface ButtonAsButton extends BaseProps, ButtonHTMLAttributes<HTMLButtonElement> {
