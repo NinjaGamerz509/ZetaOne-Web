@@ -1,0 +1,21 @@
+{
+  "name": "Zeta One",
+  "short_name": "Zeta One",
+  "description": "The smarter way to study.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#04120D",
+  "theme_color": "#04120D",
+  "icons": [
+    {
+      "src": "/assets/logo/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
