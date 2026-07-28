@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 
-.material-symbols-rounded {
-  font-family: "Material Symbols Rounded";
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-}
-* {
   scroll-behavior: smooth;
 }
 

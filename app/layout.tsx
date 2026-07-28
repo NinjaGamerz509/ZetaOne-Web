@@ -1,3 +1,4 @@
+import "@fontsource/material-symbols-rounded";
 import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "@/styles/globals.css";
