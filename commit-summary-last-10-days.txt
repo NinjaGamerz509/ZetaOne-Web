@@ -1,0 +1,103 @@
+Repository: NinjaGamerz509/ZetaOne-Web (ID: 1314944075)
+Summary file: Commit summary for the last ~10 days (since 2026-07-19)
+Generated: 2026-07-29 by GitHub Copilot
+
+Commits (newest → oldest):
+
+1) SHA: 80949e7d55817854c7d0b31f30cc9da186b8ef9e
+   Message: Fix css bracket
+   Author: NinjaGamerz509
+   Date: 2026-07-28T13:12:13Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/80949e7d55817854c7d0b31f30cc9da186b8ef9e
+   Files changed:
+     - styles/globals.css — modified (1 deletion)
+       * Removed an extra/mismatched closing brace before body rules.
+   Effect: Fixes stray/mismatched CSS bracket in globals.css.
+
+2) SHA: c367fec6794b7527185480c627ed2e20f6d59f0f
+   Message: Fix material symbols font loading
+   Author: NinjaGamerz509
+   Date: 2026-07-28T13:10:37Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/c367fec6794b7527185480c627ed2e20f6d59f0f
+   Files changed:
+     - app/layout.tsx — modified (+1): added import: import "@fontsource/material-symbols-rounded";
+     - package.json — modified: added dependency @fontsource/material-symbols-rounded (latest); adjusted ordering
+     - styles/globals.css — modified (-9): removed previously added .material-symbols-rounded CSS block
+   Effect: Switches font loading to @fontsource and removes inline symbol CSS.
+
+3) SHA: 3de056a772ef76af27bc6d8df6a5a3993e3b3847
+   Message: Fix globals css syntax
+   Author: NinjaGamerz509
+   Date: 2026-07-28T13:06:26Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/3de056a772ef76af27bc6d8df6a5a3993e3b3847
+   Files changed:
+     - styles/globals.css — modified (+1 insertion)
+       * Inserted a missing closing brace or corrected ordering (small syntax fix).
+   Effect: Small syntax correction in globals.css.
+
+4) SHA: 14f74b2656f71c654fdcf58b1639920821c563cb
+   Message: Remove invalid Material Symbols font-face
+   Author: NinjaGamerz509
+   Date: 2026-07-28T13:02:42Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/14f74b2656f71c654fdcf58b1639920821c563cb
+   Files changed:
+     - styles/globals.css — modified (-20 deletions)
+       * Removed an @font-face block referencing a woff2 URL and many .material-symbols-rounded properties (display, font-variation-settings, smoothing, :root color-scheme, etc.).
+   Effect: Removes invalid/incorrect @font-face and related symbol CSS; prepares for alternate loading approach.
+
+5) SHA: 11ec216ab05e2a1385179f7d97f24e96f7310a41
+   Message: Fix Material Symbols icons
+   Author: NinjaGamerz509
+   Date: 2026-07-28T12:58:52Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/11ec216ab05e2a1385179f7d97f24e96f7310a41
+   Files changed:
+     - styles/globals.css — modified (+17 additions)
+       * Added .material-symbols-rounded rule (font-family, weight, style, font-size, line-height, display, font-variation-settings, smoothing).
+   Effect: Adds styling for material symbol icons (intermediate step later adjusted).
+
+6) SHA: e81490430ab2e83951bf85a8b11759f2d35bd3d4
+   Message: Add Material Symbols font
+   Author: NinjaGamerz509
+   Date: 2026-07-28T12:54:12Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/e81490430ab2e83951bf85a8b11759f2d35bd3d4
+   Files changed:
+     - app/layout.tsx — modified (+3): inserted Google Fonts <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:..." into head.
+   Effect: Adds Google Fonts link for Material Symbols via HTML head (later approach changed).
+
+7) SHA: 57c13eb236eef855f63b54c40140937f09991926
+   Message: Fix Button children typing
+   Author: NinjaGamerz509
+   Date: 2026-07-28T12:38:41Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/57c13eb236eef855f63b54c40140937f09991926
+   Files changed:
+     - components/ui/Button.tsx — modified (+1, -1): changed prop typing from `children: React.ReactNode;` to `children?: React.ReactNode;` (made children optional).
+   Effect: TypeScript typing fix so Button can be used without children (icon-only buttons) without type errors.
+
+8) SHA: c34e0b1cc091d5266bfb8e6db9b8fbc056aac682
+   Message: Fix material-symbols version
+   Author: NinjaGamerz509
+   Date: 2026-07-28T12:35:19Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/c34e0b1cc091d5266bfb8e6db9b8fbc056aac682
+   Files changed:
+     - package.json — modified (+7 additions, -7 deletions)
+       * Reordered and updated dependencies: material-symbols bumped to 0.45.9; framer-motion and other deps reordered. Dev dependencies reorganized (postcss, tailwindcss, typescript moved).
+   Effect: Dependency/version housekeeping to ensure correct material-symbols/framer-motion/TypeScript setup.
+
+9) SHA: 836fd1ff2b182231e46aa7e4b2e880b84574dee5
+   Message: Initial commit - Zeta One Website
+   Author: NinjaGamerz509
+   Date: 2026-07-28T12:18:53Z
+   URL: https://github.com/NinjaGamerz509/ZetaOne-Web/commit/836fd1ff2b182231e46aa7e4b2e880b84574dee5
+   Files changed: Many files added (initial scaffold). Examples include:
+     - .env.example, .eslintrc.json, .github/ templates and workflow, .gitignore, README.md, LICENSE, CONTRIBUTING.md
+     - app/ pages and routes: app/page.tsx, app/layout.tsx, app/docs/, app/articles/, app/download/, app/releases/, app/about/, etc.
+     - components/: ui/, layout/, sections/ (large set of components added)
+     - config/, content/, constants/, public/ assets
+   Stats: +6755 additions (project scaffold)
+   Effect: Initial project scaffold and full website codebase added.
+
+Notes:
+- Most work in this window focused on adding the site scaffold (initial commit) and then iterating on Material Symbols font loading (several commits switching between Google Fonts, inline @font-face, and @fontsource package), plus a few styling/type fixes.
+- If you want me to remove all references to "claude" from the repo: please confirm whether you want (A) just to exclude/ignore commits/messages mentioning "claude" from summaries, (B) locate and list all files/lines referencing "claude", or (C) actually edit the repo to remove/replace those references and open a PR. I can do any of these next.
+
+End of file.
