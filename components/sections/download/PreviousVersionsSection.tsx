@@ -47,10 +47,19 @@ export function PreviousVersionsSection() {
               </Reveal>
             ))
           ) : (
-            <Reveal delay={0.1}>
-              <p className="text-center text-[15px] text-white/45">
-                This is the first release — check back after future updates.
-              </p>
+            <Reveal delay={0.08}>
+              <GlassCard className="flex flex-col items-center px-8 py-12 text-center">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/15">
+                  <Icon name="history_toggle_off" size={24} className="text-emerald-300" />
+                </div>
+                <h3 className="mt-4 text-[15px] font-semibold text-white">
+                  No Older Versions Available
+                </h3>
+                <p className="mt-2 max-w-sm text-sm text-white/50">
+                  {LATEST_RELEASE.version} is the first public release of Zeta One. Future
+                  versions will appear here.
+                </p>
+              </GlassCard>
             </Reveal>
           )}
         </div>

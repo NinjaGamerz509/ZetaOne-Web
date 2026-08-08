@@ -12,22 +12,20 @@ export const LATEST_RELEASE: Release = {
   minAndroidVersion: APP.minimumAndroidVersion,
   apkSize: APP.apkSize,
   highlights: [
-    "Improved Notes performance",
-    "Better animations",
-    "Fixed PDF rendering",
-    "New Focus Mode",
-    "UI refinements",
+    "First public release of Zeta One",
+    "Notes, Tasks, Documents, Focus Mode, Goals and more",
+    "Available for ARM64, ARM, x86, x86_64 and Universal",
   ],
   changelog: {
-    added: ["Focus Mode with automatic break timers", "Session statistics inside Analytics"],
-    improved: ["Notes load and scroll performance", "Overall animation smoothness across the app"],
-    fixed: ["PDF pages rendering incorrectly on some devices", "Task reminders not firing on time"],
+    added: [
+      "Initial public release with all core modules",
+      "Notes, Tasks, Documents, Focus Mode, Goals, Flashcards, Calendar, Timetable and Analytics",
+    ],
+    improved: [],
+    fixed: [],
     removed: [],
   },
-  knownIssues: [
-    "Occasional delay opening very large PDF files",
-    "Timetable landscape layout is not yet optimized",
-  ],
+  knownIssues: [],
   apks: getDownloadLinksForVersion(APP.currentVersion),
 };
 

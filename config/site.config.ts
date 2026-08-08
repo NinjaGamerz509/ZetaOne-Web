@@ -8,7 +8,7 @@ export const siteConfig = {
   developer: "Shaikh Zaid",
   email: {
     support: "help@zetaone.qzz.io",
-    feedback: "feedback@zetaone.qzz.io",
+    feedback: "help@zetaone.qzz.io",
   },
   social: {
     github: "https://github.com/zetaone",

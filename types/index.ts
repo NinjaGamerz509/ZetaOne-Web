@@ -9,7 +9,7 @@ export interface FeatureItem {
 }
 
 export interface ReleaseApk {
-  arch: "ARM64" | "ARM" | "x86" | "Universal" | "Bundle";
+  arch: "ARM64" | "ARM" | "x86" | "x86_64" | "Universal" | "Bundle";
   label: string;
   url: string | null;
   size: string;

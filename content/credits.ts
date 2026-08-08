@@ -1,7 +1,7 @@
 import type { ProjectLead, AiTool, Tester, Contributor, CommunityLink } from "@/types";
 
 export const PROJECT_LEAD: ProjectLead = {
-  name: "Shaikh Zaid",
+  name: "Shaikh Zaid (NinjaGamerz)",
   roles: ["Project Creator", "UI Planning", "Development", "Vision"],
   bio: "Zeta One was created, planned and built by Shaikh Zaid, with AI tools assisting throughout the process.",
 };

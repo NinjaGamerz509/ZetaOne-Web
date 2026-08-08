@@ -1,5 +1,8 @@
 import type { ReleaseApk } from "@/types";
 
+const RELEASE_BASE =
+  "https://github.com/NinjaGamerz509/ZataOne/releases/download/v26.8.1";
+
 /**
  * Single source of truth for every APK download link.
  * Set `url` once a real file is uploaded — the corresponding download
@@ -7,12 +10,37 @@ import type { ReleaseApk } from "@/types";
  * changes required.
  */
 export const DOWNLOAD_LINKS: Record<string, ReleaseApk[]> = {
-  "V26.1.8": [
-    { arch: "Universal", label: "Universal APK", url: null, size: "42 MB" },
-    { arch: "ARM64", label: "ARM64 (recommended)", url: null, size: "28 MB" },
-    { arch: "ARM", label: "ARM", url: null, size: "27 MB" },
-    { arch: "x86", label: "x86", url: null, size: "30 MB" },
-    { arch: "Bundle", label: "APK Bundle (future)", url: null, size: "—" },
+  "V26.8.1": [
+    {
+      arch: "Universal",
+      label: "Universal (works on any device)",
+      url: `${RELEASE_BASE}/app-universal-release.apk`,
+      size: "3.28 MB",
+    },
+    {
+      arch: "ARM64",
+      label: "ARM64 (recommended)",
+      url: `${RELEASE_BASE}/app-arm64-v8a-release.apk`,
+      size: "3.19 MB",
+    },
+    {
+      arch: "ARM",
+      label: "ARM (older 32-bit phones)",
+      url: `${RELEASE_BASE}/app-armeabi-v7a-release.apk`,
+      size: "3.19 MB",
+    },
+    {
+      arch: "x86",
+      label: "x86 (Intel-based devices)",
+      url: `${RELEASE_BASE}/app-x86-release.apk`,
+      size: "3.19 MB",
+    },
+    {
+      arch: "x86_64",
+      label: "x86_64 (Intel-based devices)",
+      url: `${RELEASE_BASE}/app-x86_64-release.apk`,
+      size: "3.19 MB",
+    },
   ],
 };
 
