@@ -8,6 +8,7 @@ const ARCH_ICONS: Record<ReleaseApk["arch"], string> = {
   ARM64: "memory",
   ARM: "memory",
   x86: "developer_board",
+  x86_64: "developer_board",
   Bundle: "inventory_2",
 };
 
