@@ -13,9 +13,9 @@ export const APP = {
   releaseChannel: "Stable" as const,
   releaseDate: "2026-08-15",
   apkSize: "3.28 MB",
-  supportEmail: "help@zetaone.qzz.io",
-  feedbackEmail: "help@zetaone.qzz.io",
-  documentationUrl: "https://docs.zetaone.qzz.io",
+  supportEmail: "help@zetaone.dpdns.org",
+  feedbackEmail: "help@zetaone.dpdns.org",
+  documentationUrl: "https://docs.zetaone.dpdns.org",
   downloadUrl: "/download",
   copyrightYear: 2026,
 } as const;

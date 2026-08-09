@@ -49,6 +49,8 @@ export type ArticleCategory =
   | "Community"
   | "Development";
 
+export type VideoEmbedType = "file" | "youtube" | "instagram";
+
 export interface ArticleSection {
   id: string;
   heading: string;
@@ -56,6 +58,7 @@ export interface ArticleSection {
   callout?: DocCallout;
   image?: string;
   videoUrl?: string;
+  videoEmbedType?: VideoEmbedType;
 }
 
 export interface Article {

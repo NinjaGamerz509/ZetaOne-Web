@@ -9,7 +9,7 @@
 export type AnalyticsProvider = "none" | "google" | "plausible" | "cloudflare";
 
 export const env = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zetaone.qzz.io",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zetaone.dpdns.org",
   analyticsId: process.env.NEXT_PUBLIC_ANALYTICS_ID ?? "",
   analyticsProvider: (process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER as AnalyticsProvider) ?? "none",
   apiUrl: process.env.NEXT_PUBLIC_API_URL ?? "",

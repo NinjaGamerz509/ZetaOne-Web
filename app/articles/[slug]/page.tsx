@@ -14,6 +14,9 @@ import { TableOfContents } from "@/components/sections/documentation/TableOfCont
 import { formatDate } from "@/lib/utils";
 import { JsonLd } from "@/components/layout/JsonLd";
 import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/structuredData";
+import { VideoPlayer } from "@/components/sections/articles/VideoPlayer";
+import { YouTubeEmbed } from "@/components/sections/articles/YouTubeEmbed";
+import { InstagramEmbed } from "@/components/sections/articles/InstagramEmbed";
 
 interface Props {
   params: { slug: string };
@@ -139,8 +142,14 @@ export default function ArticlePage({ params }: Props) {
                     </div>
                   )}
                   {section.videoUrl && (
-                    <div className="mt-5 aspect-video w-full overflow-hidden rounded-2xl border border-white/[0.1] bg-black/40">
-                      <video src={section.videoUrl} controls className="h-full w-full" />
+                    <div className="mt-5">
+                      {section.videoEmbedType === "youtube" ? (
+                        <YouTubeEmbed videoId={section.videoUrl} title={section.heading} />
+                      ) : section.videoEmbedType === "instagram" ? (
+                        <InstagramEmbed postUrl={section.videoUrl} />
+                      ) : (
+                        <VideoPlayer src={section.videoUrl} />
+                      )}
                     </div>
                   )}
                   {section.callout && <Callout {...section.callout} />}

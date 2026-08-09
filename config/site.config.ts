@@ -3,12 +3,12 @@ export const siteConfig = {
   tagline: "The smarter way to study.",
   description:
     "Zeta One combines notes, productivity and study tools into one beautiful Android application.",
-  url: "https://zetaone.qzz.io",
-  docsUrl: "https://docs.zetaone.qzz.io",
+  url: "https://zetaone.dpdns.org",
+  docsUrl: "https://docs.zetaone.dpdns.org",
   developer: "Shaikh Zaid",
   email: {
-    support: "help@zetaone.qzz.io",
-    feedback: "help@zetaone.qzz.io",
+    support: "help@zetaone.dpdns.org",
+    feedback: "help@zetaone.dpdns.org",
   },
   social: {
     github: "https://github.com/zetaone",

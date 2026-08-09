@@ -1,4 +1,5 @@
 import type { Article } from "@/types";
+import { NEW_ARTICLES } from "@/content/newArticles";
 
 /**
  * Article system supports unlimited posts — simply append new entries here
@@ -14,7 +15,6 @@ export const ARTICLES: Article[] = [
     publishedAt: "2026-07-20",
     readingTime: "3 min read",
     coverImage: "/assets/backgrounds/bg-glass-mint-light.jpg",
-    featured: true,
     popular: true,
     relatedSlugs: ["building-better-notes", "zeta-one-v26-1-8-released"],
     sections: [
@@ -190,4 +190,5 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  ...NEW_ARTICLES,
 ];
